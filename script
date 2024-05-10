@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Commando om de temperatuur van de Raspberry Pi te verkrijgen
+temp=$(vcgencmd measure_temp)
+
+# Temp bepalen met 2 decimalen
+temp_value=$(echo $temp | grep -oP '\d+\.\d+')
+
+# Formateren van de uitvoer
+output="<result1>$temp_value</result1>"
+
+# Weergeven van de uitvoer
+echo $output
