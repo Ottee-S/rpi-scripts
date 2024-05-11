@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Commando om de temperatuur van de Raspberry Pi te verkrijgen
+pinctrl FAN_PWM op dh
+
+# Formateren van de uitvoer
+output="<result1>OFF</result1>"
+
+# Weergeven van de uitvoer
+echo $output
